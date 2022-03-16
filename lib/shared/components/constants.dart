@@ -42,3 +42,9 @@ void SignOut(context){
                        navigateAndFinish(context, Login());
                    });
 }
+void Update(context){
+  CacheHelper.removeData(key: 'token').then((value) {
+    if(value)
+      navigateAndFinish(context, Login());
+  });
+}
