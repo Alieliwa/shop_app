@@ -41,3 +41,13 @@ class AppSeccessGetUserDataState extends AppStates{
 
 }
 class AppErrorGetUserDataState extends AppStates{}
+
+class AppLoadinUpdateDataState extends AppStates{}
+class AppSeccessUpdateDataState extends AppStates{
+
+  final LoginModel loginModel;
+
+  AppSeccessUpdateDataState(this.loginModel);
+
+}
+class AppErrorUpdateDataState extends AppStates{}
